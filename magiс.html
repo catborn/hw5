@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic</title>
+    <link rel="icon" href="./assets/image/magic.svg" type="image/svg">
+    <style>
+        body {
+            background: rgb(63, 209, 251);
+            background: radial-gradient(circle, rgba(63, 209, 251, 1) 10%, rgba(115, 70, 252, 1) 81%);
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        .flex-element {
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .flex-element:hover {
+            position: relative;
+            transition: 1s;
+            transform: scale(1.2);
+        }
+
+        #title-conteiner {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            color: azure;
+            display: flex;
+            justify-content: center;
+        }
+
+        .foot-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        .foot-element {
+            width: 20%;
+            height: 50px;
+            margin-right: 10px;
+            font-size: 46px;
+            text-align: center;
+        }
+
+        button {
+            border: 0;
+            background-color: rgb(40, 31, 172);
+            color: azure;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="title-conteiner">Добро пожаловать в музей магических артефактов!</h1>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <img class="flex-element" src="./assets/image/1.jpg" alt="Магическая лампа">
+            <img class="flex-element" src="./assets/image/2.jpg" alt="Маховик времени">
+            <img class="flex-element" src="./assets/image/3.jpg" alt="Кольцо всевластия">
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot-container">
+            <button class="foot-element">Каталог</button>
+            <button class="foot-element">Экскурсия</button>
+            <button class="foot-element">Заклинания</button>
+        </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
